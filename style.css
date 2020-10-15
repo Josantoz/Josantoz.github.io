@@ -276,7 +276,7 @@ h4{
     width: 10vw;
   }
 }
-@media screen and (max-width:400px ){
+@media screen and (max-width:500px ){
   .nav{
     font-size: 1em;
     display:flex;
