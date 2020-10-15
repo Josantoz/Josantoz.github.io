@@ -9,7 +9,6 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-
   position: relative;
   height: auto;
   min-height: 100% !important;
@@ -53,17 +52,12 @@ section{
 .container { 
   width: 100%;
   height: auto;
-  /*overflow: hidden;
-  font-size: 150%;
-  height: 100%;
-  display:block;
-  overflow:auto; */ 
 }
-.row{
+/****.row{
   display:flex;
   justify-content:center;
-  box-sizing: content-box;   
-}
+  box-sizing: content-box; 
+}****/
 /************************************Home Section********************************** */
 #home {
   position: relative;
@@ -79,19 +73,6 @@ section{
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
-/*.button {
-  background-color: #080e70;
-  border: none;
-  padding: 12px 30px;
-  font-size: 20px;
-  border-radius: 6px;
-  position: static;  
-  color:pink;
-  display:flex;
-  justify-content:center;
-  box-sizing: content-box;   
-} */
-
 .tagline{
   font-size:3rem;
   color:rgb(255, 238, 6);
@@ -144,7 +125,7 @@ section{
   z-index: -1;
   /*background-image: url(https://source.unsplash.com/random); */
 }
-.col-sm-4{       /*NB:--->The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops).*/
+.col-sm-4{ /*NB:--->The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops).*/
   margin: 20px;
   color:rgb(157, 255, 0);
   font-size: 130%;
@@ -260,13 +241,75 @@ h1,h2,h3.heading  {
       color: rgb(238, 234, 229);      
       margin-bottom: 1.9rem; 
       margin-top:.5rem 1.1rem; 
-    }      
-h4{font-size:2rem;}
+      }      
+h4{
+  font-size:2rem;
+  }
 /********************************@media******************************/
-@media  screen and (max-width: 600px) and (min-width: 400px){
-  .caption .nav #header #projects #navbar{
-    width:100%;    
-    overflow:auto;
-    top:30%;    
+@media (max-width:900px){
+.container{
+ display:block; 
+}
+}
+@media screen and (max-width:300px ){
+  .nav{
+    font-size: 13px;
+    display:flex;
+    justify-content: left;
+    padding:0;
+    margin:0;    
   }
+  .nav_link {
+    text-decoration: none;
+    color: rgb(239, 242, 247);
+    padding: 4px;
+    font-family: 'Open Sans', sans-serif;
   }
+  .poster {
+    width:90vw;
+    margin: 1em;
+    margin-bottom: 2rem;
+    overflow: hidden;  
+  }
+
+  .image-characters{
+    width: 10vw;
+  }
+}
+@media screen and (max-width:400px ){
+  .nav{
+    font-size: 1em;
+    display:flex;
+    justify-content: left;
+    padding:0;
+    margin:0;    
+  }
+  .nav_link {
+    text-decoration: none;
+    color: rgb(239, 242, 247);
+    padding: 4px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .card {
+    width:90vw;
+    margin: 1em;
+    margin-bottom: 2rem;
+    overflow: hidden;  
+  }
+  .image-characters{
+    width: 70vw;
+  }
+  .card{
+    width: 90%;
+    height: 30%;
+  }
+}
+
+@media screen and (min-width:700px){
+  .row{
+    display:flex;
+  justify-content:center;
+  box-sizing: content-box;  
+  padding:3px;  
+  }
+}
