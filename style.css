@@ -65,6 +65,7 @@ section{
   height: 100vh;
   z-index: -1;
 }
+
 .primary-image {
   float: right;
 }
@@ -72,6 +73,7 @@ section{
   opacity: .3;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+         
 }
 .tagline{
   font-size:3rem;
@@ -84,6 +86,25 @@ section{
   top:40%;
   z-index:1;
   }
+/*
+
+  
+.resume{
+  font-family:Arial, Helvetica, sans-serif ;
+  font-size: large;
+  background-color: rgb(251, 253, 255);
+  align-items: center;
+  margin-left: 20%;
+  color:rgb(206, 21, 21);  
+  text-decoration: none;  
+}
+.resume:hover{
+  opacity:0.7;
+  text-transform: uppercase;    
+}
+*/
+
+
 .pulse{
   background-color: #080e70;
   border-radius: 6px; 
