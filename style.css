@@ -265,7 +265,7 @@ h4{
     width: 10vw;
   } 
   .primary-image {    
-    float: none;  
+      padding-left:3%;
   }  
 }
 @media screen and (max-width:400px ){   
