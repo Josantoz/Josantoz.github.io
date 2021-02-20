@@ -264,11 +264,15 @@ h4{
   .image-characters{
     width: 10vw;
   } 
-  .primary-image {    
-      padding-left:3%;
-  }  
 }
 @media screen and (max-width:400px ){   
+
+  .primary-image {
+  float: none;
+  margin-top: 5%;
+  margin-left: 4%;
+  opacity: 1;
+}
   .nav{
     font-size: 1em;
     display:flex;
@@ -307,5 +311,5 @@ h4{
   box-sizing: content-box;  
   padding:3px;  
   }  
-  
 }
+
