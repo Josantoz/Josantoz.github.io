@@ -296,7 +296,7 @@ h4{
     color: chocolate;
   }
 }
-/*
+
 @media screen and (min-width:700px){
   .row{
     display:flex;
@@ -304,13 +304,12 @@ h4{
   box-sizing: content-box;  
   padding:3px;  
   }  
-} */
+} 
 @media screen and (max-width: 420px){
   .primary-image {    
-    opacity: 0.9;
-     
+    opacity: 0.9;     
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
