@@ -74,7 +74,6 @@ section{
 }
 /************************************About me Section********************************** */
 #aboutme {
-  /*background-color: #590eaf;*/
   padding-top: 5%;
   position: relative;
   width: 100%;
@@ -295,7 +294,6 @@ h4{
     color: chocolate;
   }
 }
-
 @media screen and (min-width:700px){
   .row{
     display:flex;
