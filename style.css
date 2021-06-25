@@ -299,6 +299,6 @@ h4{
 @media only screen and (min-width:300px){
   .primary-image {    
     opacity: 0.8;
-    max-width:60%;
+    max-width:130%;
   } 
 }
