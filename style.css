@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700'); 
 body {
-  background:#080e36;;
-  background: -moz-linear-gradient(-45deg, #182a77 0%, #5fc3e4 100%);
-  background: -webkit-linear-gradient(-45deg, #4439ac 0%, #5fc3e4 100%);
-  background: linear-gradient(135deg, #5a269e 0%, #5fc3e4 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1);
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  height: auto;
-  min-height: 100% !important;
+  background-color:#020411;;
 }
 /************************************* Style the navbar************************************/
 .nav {
@@ -31,7 +20,7 @@ body {
 }
 .nav_link:hover {
   color: rgb(72, 255, 0);
-  background-color: rgb(11, 4, 114);
+  background-color: rgb(6, 2, 58);
   text-decoration: underline;  
 }
 #navbar {
@@ -41,7 +30,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #080e70;
+  /*background-color: #080e70;*/
 }
 /***********************************Style the navbar**************************************/
 section{
@@ -53,11 +42,6 @@ section{
   width: 100%;
   height: auto;
 }
-/****.row{
-  display:flex;
-  justify-content:center;
-  box-sizing: content-box; 
-}****/
 /************************************Home Section********************************** */
 #home {
   position: relative;
@@ -67,18 +51,16 @@ section{
 }
 .primary-image {
   float: right;
-}
-.primary-image :hover {
-  opacity: .3;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  margin-top: 5%;
+  opacity: 1;
+  padding-right: 5%;
 }
 .tagline{
   font-size:3rem;
-  color:rgb(255, 238, 6);
+  color:rgb(160, 255, 6);
 }
 .caption{
-  width:100%;
+  width:70%;
   max-width: 100%;
   position: absolute;
   top:40%;
@@ -93,7 +75,6 @@ section{
 }
 /************************************About me Section********************************** */
 #aboutme {
-  background-color: #590eaf;
   padding-top: 5%;
   position: relative;
   width: 100%;
@@ -108,6 +89,7 @@ section{
   font-size: 110%;
   color:white;
 }
+
 .secondary-image {
   float: left;
   opacity:0.1;
@@ -121,23 +103,25 @@ section{
   height: 100vh;
   /*background-color: #151616;*/
   display: table;
-  background: rgb(66, 5, 134); 
+  /*background: rgb(66, 5, 134); */
   z-index: -1;
   /*background-image: url(https://source.unsplash.com/random); */
 }
 .col-sm-4{ /*NB:--->The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops).*/
   margin: 20px;
-  color:rgb(157, 255, 0);
+  padding: 7px;
+  color:rgb(229, 241, 209);
   font-size: 130%;
   box-shadow: 0 8px 16px 0 rgba(227, 231, 8, 0.644);
-  background: -moz-linear-gradient(-45deg, #182a77 0%, #793494 100%);
-  background: -webkit-linear-gradient(-45deg, #4439ac 0%, #e45fce 100%);
-  background: linear-gradient(135deg, #5a269e 0%, #833aa5 100%);
+  /*background: -moz-linear-gradient(-45deg, #182a77 0%, #793494 100%);
+  background: -webkit-linear-gradient(-45deg, #2e2769 0%, #e45fce 100%);*/
+  background: linear-gradient(360deg, #0f1425 50%, #222d52 100%);
+  
 }
 /************************************Projects Section********************************** */
 #projects {
   padding-top: 5%;
-  position: static;      /*Static positioning  will remain in the natural flow of the page. It will NOT act as anchor point for the absolutely positioned elements*/
+  position: static;   /*Static positioning  will remain in the natural flow of the page. It will NOT act as anchor point for the absolutely positioned elements*/
   width: 100%; 
   /*z-index: -1; */
 }
@@ -155,8 +139,10 @@ section{
   width: 400px;
   height: 300px;
   border-radius: 5px;   
-  margin: 20px;  
+  margin: auto;  
+  margin-bottom: 30px;
   position: static;
+  padding: 0.5%;
 }  
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.555);
@@ -246,12 +232,23 @@ h4{
   font-size:2rem;
   }
 /********************************@media******************************/
-@media (max-width:900px){
+@media (max-width:700px){
 .container{
  display:block; 
 }
+.intro{
+  color:rgb(0, 255, 0);
+  margin-left: auto;
+    margin-right: auto;
 }
-@media screen and (max-width:300px ){
+.primary-image {    
+  opacity: 0.7;
+  max-width:50%;
+  padding-right: 35%;  
+} 
+
+}
+@media screen and (max-width:300px){
   .nav{
     font-size: 13px;
     display:flex;
@@ -270,14 +267,10 @@ h4{
     margin: 1em;
     margin-bottom: 2rem;
     overflow: hidden;  
-  }
-
-  .image-characters{
-    width: 10vw;
-  }
+  } 
 }
-@media screen and (max-width:400px ){
-  .nav{
+@media screen and (max-width:400px){   
+ .nav{
     font-size: 1em;
     display:flex;
     justify-content: left;
@@ -289,7 +282,7 @@ h4{
     color: rgb(239, 242, 247);
     padding: 4px;
     font-family: 'Open Sans', sans-serif;
-  }
+  }  
   .card {
     width:90vw;
     margin: 1em;
@@ -303,13 +296,15 @@ h4{
     width: 90%;
     height: 30%;
   }
+  .caption{
+    color: chocolate;
+  }
 }
-
 @media screen and (min-width:700px){
   .row{
     display:flex;
-  justify-content:center;
-  box-sizing: content-box;  
-  padding:3px;  
-  }
-}
+    justify-content:center;
+    box-sizing: content-box;  
+    padding:3px;  
+  }  
+} 

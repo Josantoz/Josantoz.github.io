@@ -16,8 +16,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-
 $(function() {
   $('.js-nav a, .js-connect').click(function(e) {
     e.preventDefault();
