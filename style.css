@@ -30,7 +30,14 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  /*background-color: #080e70;*/
+}
+.resume{
+  font-family:Arial, Helvetica, sans-serif ;
+  font-size: large;
+  background-color: rgb(238, 238, 255);
+  align-items: center;
+  margin-left: 43%;
+  color:rgb(250, 250, 250);    
 }
 .resume{
   font-family:Arial, Helvetica, sans-serif ;
@@ -108,9 +115,7 @@ section{
   position: relative;
   width: 100%;
   height: 100vh;
-  /*background-color: #151616;*/
   display: table;
-  /*background: rgb(66, 5, 134); */
   z-index: -1;
   /*background-image: url(https://source.unsplash.com/random); */
 }
@@ -120,8 +125,6 @@ section{
   color:rgb(229, 241, 209);
   font-size: 130%;
   box-shadow: 0 8px 16px 0 rgba(227, 231, 8, 0.644);
-  /*background: -moz-linear-gradient(-45deg, #182a77 0%, #793494 100%);
-  background: -webkit-linear-gradient(-45deg, #2e2769 0%, #e45fce 100%);*/
   background: linear-gradient(360deg, #0f1425 50%, #222d52 100%);
   position:relative;
 }
@@ -212,16 +215,19 @@ section{
   text-align: center;  
 }  
 .social_links a{
+<<<<<<< Updated upstream
   margin:5px;
+=======
+  margin:4px;
+>>>>>>> Stashed changes
   color: #041044;
 }
 .social_links a :hover{
-  color:blue;
+  color:rgb(20, 3, 250);
 }
 footer {  
-  background: #e55d87;
   background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-  background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+  background: -webkit-linear-gradient(-45deg, #e55d87 0%, #3260b6 100%);
   background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1);  
   box-sizing: border-box;
@@ -251,22 +257,28 @@ h4{
 .primary-image {    
   opacity: 0.7;
   max-width:50%;
-  padding-right: 35%;  
+  padding-right: 40%;  
+  background-size: contain;
 } 
 }
 @media screen and (max-width:300px){
-  .nav{
+  /*.nav{
     font-size: 13px;
     display:flex;
     justify-content: left;
     padding:0;
-    margin:0;    
-  }
+    margin:0; 
+    background-size: contain;   
+  } 
   .nav_link {
     text-decoration: none;
     color: rgb(239, 242, 247);
     padding: 4px;
     font-family: 'Open Sans', sans-serif;
+  }*/
+  .nav_link {
+    font-size: 10px;
+    float:left;
   }
   .poster {
     width:90vw;
@@ -275,19 +287,21 @@ h4{
     overflow: hidden;  
   } 
 }
-@media screen and (max-width:400px){   
- .nav{
+@media screen and (max-width:600px){   
+ /*.nav{
     font-size: 1em;
     display:flex;
     justify-content: left;
     padding:0;
     margin:0;    
-  }
+  }*/
   .nav_link {
     text-decoration: none;
     color: rgb(239, 242, 247);
-    padding: 4px;
+    padding: 8px;
+    font-size: 1.0em;
     font-family: 'Open Sans', sans-serif;
+    /*background-size: contain;   */
   }  
   .card {
     width:90vw;
