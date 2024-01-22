@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700'); 
 body {
-  background-color:#020411;;
+  background: linear-gradient(90.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+  margin: 0;        /*****center an element inside its parent***/
+  color:white;
 }
 /************************************* Style the navbar************************************/
 .nav {
-  margin: 0;
+  display: flex;
+  justify-content: center;/*****Navigation Links appear on the centre*****/
+  height: 50px;
   font-size: 22px;
   list-style: none;
-  display: flex;
-  justify-content: flex-end; 
-  padding: .1em;  
-  flex-wrap:wrap;           /*flex items will wrap onto multiple lines, from top to bottom.*/
+  align-items: center;  /**Center items vertically*****/
+  position: fixed;
+  margin-top: 0;      /****ensure the Navbar is on top. No space left***/
+  width: 100%;
+  background: linear-gradient(90.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+  z-index: 12;          /*elements below the nav will hide behind it*****/
 }
 .nav_link {
   text-decoration: none;
@@ -19,26 +25,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .nav_link:hover {
-  color: rgb(72, 255, 0);
-  background-color: rgb(6, 2, 58);
-  text-decoration: underline;  
-}
-#navbar {
-  overflow: hidden;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-/*.resume{
-  font-family:Arial, Helvetica, sans-serif ;
-  font-size: large;
-  background-color: rgb(238, 238, 255);
-  align-items: center;
-  margin-left: 43%;
-  color:rgb(250, 250, 250);    
-}*/
+  color: #020411;
+  background-color: rgb(206, 205, 205);
+ }
 /*---------------------------------------Container----------------------------------------*/
 .container { 
   width: 100%;
@@ -61,7 +50,6 @@ body {
 }
 .tagline{
   font-size:3rem;
-  color:rgb(160, 255, 6);
 }
 .caption{
   width:70%;
@@ -70,23 +58,15 @@ body {
   top:40%;
   z-index:1;
   }
-.pulse{
-  background-color: #080e70;
-  border-radius: 6px; 
-  display:flex;
-  justify-content:center;
-  box-sizing: content-box;   
-}
 /************************************About me Section********************************** */
 #aboutme {
-  padding-top: 5%;
+  padding: 6%;
   position: relative;
-  width: 100%;
   height: 100vh;
   display: table;
   z-index: -1;
   color: rgb(241, 234, 240);
-  font-size: larger;
+  font-size: large;
 }
 /************************************Projects Section********************************** */
 #services {
@@ -96,15 +76,15 @@ body {
   height: 100vh;
   display: table;
   z-index: -1;
-  /*background-image: url(https://source.unsplash.com/random); */
 }
 .col-sm-4{ /*NB:--->The Bootstrap grid system has four classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops).*/
   margin: 20px;
   padding: 7px;
   color:rgb(229, 241, 209);
   font-size: 130%;
-  box-shadow: 0 8px 16px 0 rgba(227, 231, 8, 0.644);
-  background: linear-gradient(360deg, #0f1425 50%, #222d52 100%);
+  border-style: dotted;
+  border-width: 2px;
+  border-radius: 10px;
   position:relative;
 }
 /************************************Projects Section********************************** */
@@ -112,7 +92,6 @@ body {
   padding-top: 5%;
   position: static;   /*Static positioning  will remain in the natural flow of the page. It will NOT act as anchor point for the absolutely positioned elements*/
   width: 100%; 
-  /*z-index: -1; */
 }
 .rowrow{                      /*Enables images to overflow into the next line*/
   display: flex;
@@ -123,7 +102,7 @@ body {
           justify-content: space-between;        
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.87);
+  box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.1);
   transition: 0.3s;
   width: 400px;
   height: 300px;
@@ -134,7 +113,7 @@ body {
   padding: 0.5%;
 }  
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.555);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 } 
 .poster {
   margin-bottom: 32px;
@@ -146,7 +125,6 @@ body {
   display: block;
   text-decoration: none;    
   position: relative;
-  /*background: rgb(105, 155, 231);*/
 }
 .poster .link:hover .image-size{
   opacity: .3;
@@ -188,24 +166,43 @@ body {
   color: rgb(247, 246, 241);
 }
 .social_links {
-  font-size: 70%;
+  font-size: 60%;
   display: flex; 
   justify-content: center;
   text-align: center;  
 }  
 .social_links a{
   margin:4px;
-  color: #041044;
+  color: #ffffff;
 }
-.social_links a :hover{
-  color:rgb(20, 3, 250);
+.fa-linkedin-square:hover {
+  color:rgba(0, 119, 255, 0.979);
+  background:#ffffff;
+}
+.fa-twitter-square:hover {
+  color:rgba(29, 161, 242, 0.8);
+  background:#ffffff;
+}
+.fa-youtube-square:hover {
+  color:rgba(255, 0, 0, 0.8);
+  background:#ffffff;
+}
+.fa-behance-square:hover {
+  color:rgba(25, 0, 255, 0.8);
+  background:#ffffff;
+}
+.fa-github-square:hover {
+  color:rgba(0, 0, 0, 0.8);
+  background:#ffffff;
+}
+.fa-envelope-o:hover {
+  color:rgba(255, 0, 0, 0.8);
+  background:#ffffff;
 }
 footer {  
-  background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-  background: -webkit-linear-gradient(-45deg, #e55d87 0%, #3260b6 100%);
-  background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1);  
-  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  width: 100%;
 }
 /***********************************Footer Section****************************************/
 h1,h2,h3.heading  {
@@ -225,36 +222,17 @@ h4{
  display:block; 
 }
 .intro{
-  color:rgb(0, 255, 0);
   margin-left: auto;
     margin-right: auto;
 }
 .primary-image {    
   opacity: 0.7;
   max-width:50%;
-  padding-right: 40%;  
+  padding: 10%;  
   background-size: contain;
 } 
 }
 @media screen and (max-width:300px){
-  /*.nav{
-    font-size: 13px;
-    display:flex;
-    justify-content: left;
-    padding:0;
-    margin:0; 
-    background-size: contain;   
-  } 
-  .nav_link {
-    text-decoration: none;
-    color: rgb(239, 242, 247);
-    padding: 4px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  .nav_link {
-    font-size: 10px;
-    float:left;
-  }*/
   .poster {
     width:70vw;
     margin: 1em;
@@ -262,18 +240,14 @@ h4{
     overflow: hidden;  
   } 
 }
-@media screen and (max-width:600px){   
- /*.nav{
-    font-size: 1em;
-    display:flex;
-    justify-content: left;
-    padding:0;
-    margin:0;    
-  }*/
+@media screen and (max-width:900px){   
   .primary-image {
     /*float: right;*/
     margin-top: 5%;
-    padding-right: 35%;  
+    padding-right: 40%;  
+  }
+  .nav{
+    z-index: 12;
   }
   .nav_link {
     text-decoration: none;
@@ -281,31 +255,21 @@ h4{
     padding: 10px;
     font-size: 0.8em;
     font-family: 'Open Sans', sans-serif;
-    /*background-size: contain;   */
   }  
   .card {
-    width:90vw;
-    margin: 1em;
-    margin-bottom: 2rem;
-    overflow: hidden;  
+    display:block;
+    justify-content: center;
+    padding: .1em;    
   }
   .image-characters{
     width: 70vw;
   }
-  .card{
-    width: 90%;
-    height: 30%;
+  #aboutme {
+    padding: 2%;    
+    font-size: larger;
   }
   .caption{
     color: chocolate;
     text-align: center;
-  }
+  } 
 }
-@media screen and (min-width:700px){
-  .row{
-    display:flex;
-    justify-content:center;
-    box-sizing: content-box;  
-    padding:3px;  
-  }  
-} 
