@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700'); 
 
+/*html{
+  width: 100%;
+  
+ }
+ */
+
 body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+
   background: linear-gradient(90.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
   margin: 0;        /*****center an element inside its parent***/
+  padding: 0;
   color:white;
   /*box-sizing: border-box;*/ 
-    min-width: 100%;  
+    min-width: 100%; 
+   /* max-width:inherit ; */
 }
 /************************************* Style the navbar************************************/
 .nav {
